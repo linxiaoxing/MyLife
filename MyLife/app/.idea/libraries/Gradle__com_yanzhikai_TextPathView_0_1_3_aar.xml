@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yanzhikai:TextPathView:0.1.3@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/060d4fa7636cb275dd8b47a343bde0cd/jetified-TextPathView-0.1.3/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/060d4fa7636cb275dd8b47a343bde0cd/jetified-TextPathView-0.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/060d4fa7636cb275dd8b47a343bde0cd/jetified-TextPathView-0.1.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhikai/TextPathView/0.1.3/fa37bca8fa63ab08eb99080791d6db8b228f9cc7/TextPathView-0.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhikai/TextPathView/0.1.3/1e7328e2b016b2ec53786849974028aa6221e395/TextPathView-0.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
