@@ -5,7 +5,10 @@
     <string name="title_knowledgesystem">已完成</string>
     <string name="navigation">导航</string>
     <string name="title_my">我的</string>
-    <string name="hot_title">Hot</string>
+    <string name="hot_menu">Hot</string>
+    <string name="note_menu">记事本</string>
+    <string name="todo_menu">TODO</string>
+    <string name="todo_char">文字识别</string>
     <string name="search_title">Search</string>
     <string name="empty_network_error">Network error, Click Retry</string>
     <string name="empty_no_data">There is no data, Click Retry</string>
@@ -62,6 +65,7 @@
     <string name="stoplocation">停止定位</string>
     <string name="title">请输入标题:</string>
     <string name="content">请输入待办内容:</string>
+    <string name="body">请输入记事内容:</string>
     <string name="save">添加</string>
     <string name="no_complete">完成待办</string>
 

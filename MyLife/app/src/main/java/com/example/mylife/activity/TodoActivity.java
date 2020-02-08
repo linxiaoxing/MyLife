@@ -27,6 +27,8 @@ import com.example.mylife.base.BaseActivity;
 import com.example.mylife.base.BaseFragment;
 import com.example.mylife.fragment.done.DoneFragment;
 import com.example.mylife.fragment.undo.UndoneFragment;
+import com.example.note.activity.NoteActivity;
+import com.example.ocr.module.CharActivity;
 import com.franmontiel.persistentcookiejar.ClearableCookieJar;
 import com.franmontiel.persistentcookiejar.PersistentCookieJar;
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache;
@@ -39,7 +41,7 @@ import java.util.List;
 import butterknife.BindView;
 
 @Route(path = "/activity/MainActivity")
-public class MainActivity extends BaseActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
+public class TodoActivity extends BaseActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     @BindView(R.id.navigation)
     BottomNavigationView mNavigation;
@@ -97,18 +99,25 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
                     public void onClick(DialogInterface dialogInterface, int i) {
 
                         ClearableCookieJar cookieJar =
-                                new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(MainActivity.this));
+                                new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(TodoActivity.this));
                         cookieJar.clear();
                         SPUtils.getInstance().put("study", false);
-                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                        startActivity(new Intent(TodoActivity.this, LoginActivity.class));
                         finish();
                     }
                 });
                 builder.show();
                 break;
             case R.id.menuMe:
-
-                startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                startActivity(new Intent(TodoActivity.this, AboutActivity.class));
+                break;
+            case R.id.menuNote:
+                startActivity(new Intent(TodoActivity.this, NoteActivity.class));
+                break;
+            case R.id.menuChar:
+                startActivity(new Intent(TodoActivity.this, CharActivity.class));
+                break;
+            default:
                 break;
         }
 

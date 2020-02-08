@@ -9,6 +9,7 @@ import com.example.mylife.activity.register.RegisterActivity;
 import com.example.mylife.di.module.ActivityModule;
 import com.example.mylife.di.scope.ContextLife;
 import com.example.mylife.di.scope.PerActivity;
+import com.example.note.activity.NoteActivity;
 
 import dagger.Component;
 
@@ -29,4 +30,6 @@ public interface ActivityComponent {
     void inject(LoginActivity activity);
 
     void inject(RegisterActivity activity);
+
+//    void inject(NoteActivity activity);
 }

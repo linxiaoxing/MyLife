@@ -185,4 +185,12 @@ public abstract class BaseActivity<T extends BaseContract.BasePresenter> extends
     public <T> LifecycleTransformer<T> bindToLife() {
         return this.bindToLifecycle();
     }
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
+        detachView();
+    }
 }

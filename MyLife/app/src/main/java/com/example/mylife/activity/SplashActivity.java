@@ -19,7 +19,6 @@ import yanzhikai.textpath.SyncTextPathView;
 import yanzhikai.textpath.painter.FireworksPainter;
 
 /**
- * Created by OnexZgj on 2018/9/3:11:00.
  * des:
  */
 
@@ -36,16 +35,12 @@ public class SplashActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-
-
         setContentView( R.layout.activity_splash);
         ButterKnife.bind(this);
 
         atpvAs.setPathPainter(new FireworksPainter());
 
         atpvAs.startAnimation(0, 1);
-
-
 
         spUtils = SPUtils.getInstance();
         study = spUtils.getBoolean("study");
@@ -54,7 +49,7 @@ public class SplashActivity extends AppCompatActivity{
             @Override
             public void run() {
                 if (study) {
-                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    startActivity(new Intent(SplashActivity.this, TodoActivity.class));
                     finish();
                 } else {
                     startActivity(new Intent(SplashActivity.this, LoginActivity.class));
@@ -63,7 +58,6 @@ public class SplashActivity extends AppCompatActivity{
                 }
             }
         }, 3000);
-
 
     }
 
